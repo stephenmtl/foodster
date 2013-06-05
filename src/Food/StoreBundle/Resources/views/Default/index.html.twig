@@ -1,0 +1,171 @@
+{% extends "FoodStoreBundle::layout.html.twig" %}
+{% block title %} Maisto užsakymo sistema {% endblock %}
+    
+    {%  block slider %}
+    <!-- start: Slider -->
+	<div class="slider-wrapper">
+
+		<div id="da-slider" class="da-slider">
+			<div class="da-slide">
+				<h2>Greita integracija</h2>
+				<p>Integruoti elektroninę parduotuvė dar niekada nebuvo taip lengva! </p>
+				<a href="#" class="da-link">Skaityti daugiau</a>
+				<div class="da-img"><img src={{  asset('img/parallax-slider/twitter.png') }} alt="image01" /></div>
+			</div>
+			<div class="da-slide">
+				<h2>Minimaūs kaštai</h2>
+				<p>
+                Blah blah blah</p>
+				<a href="#" class="da-link">Skaityti daugiau</a>
+				<div class="da-img"><img src={{  asset('img/parallax-slider/responsive.png') }} alt="image02" /></div>
+			</div>
+			<nav class="da-arrows">
+				<span class="da-arrows-prev"></span>
+				<span class="da-arrows-next"></span>
+			</nav>
+		</div>
+		
+	</div>
+	<!-- end: Slider -->
+			
+	{% endblock %}
+
+	{% block content %}
+      		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
+      		<div class="hero-unit">
+        		<p>
+				    Užtenka pridėti 3 eilutes kodo prie Jūsų esamo puslapio ir Jūs galite naudotis foodster! Jokių dizaino pakeitimų,
+                    palaikymo ir trūkdžių!
+                </p>
+        		<p><a class="btn btn-success btn-large">Sužinoti daugiau</a></p>
+      		</div>
+			<!-- end: Hero Unit -->
+
+      		<!-- start: Row
+      		<div class="row">
+
+                    <!-- start inflating from db here ???
+        		<div class="span4">
+          			<div class="icons-box">
+						<i class="ico-ok circle big"></i>
+						<div class="title"><h3>Pliusas1</h3></div>
+						<p>
+                            Kodėl tai yra pliusas DB: -
+                        </p>
+						<div class="clear"></div>
+					</div>
+        		</div>
+                    <!-- end of inflator iteration ???
+
+        		<div class="span4">
+          			<div class="icons-box">
+						<i class="ico-ipad circle big"></i>
+						<div class="title"><h3>Responsive</h3></div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						</p>
+						<div class="clear"></div>
+					</div>
+        		</div>
+
+        		<div class="span4">
+          			<div class="icons-box">
+						<i class="ico-heart circle big"></i>
+						<div class="title"><h3>User friendly</h3></div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						</p>
+						<div class="clear"></div>
+					</div>
+        		</div>
+
+      		</div>
+			<!-- end: Row -->
+        <!-- start: Row -->
+        <div class="row">
+
+            <!-- start: Icon Boxes -->
+            <div class="icons-box-vert-container">
+
+                <!-- start: Icon Box Start -->
+                <div class="span6">
+                    <div class="icons-box-vert">
+                        <i class="ico-ok ico-color circle-color big"></i>
+                        <div class="icons-box-vert-info">
+                            <h3>Lengva naudoti</h3>
+                            <p>Nereikia nieko keisti. Tiesiog pridėkite 3 eilutes kodo prie Jūsų puslapio</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- end: Icon Box-->
+
+                <!-- start: Icon Box Start -->
+                <div class="span6">
+                    <div class="icons-box-vert">
+                        <i class="ico-cup  ico-white circle-color-full big-color"></i>
+                        <div class="icons-box-vert-info">
+                            <h3>Saugu ir stabilu</h3>
+                            <p>Leiskite mums pasirupinti Jūsų saugumo ir patikimumu! </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- end: Icon Box -->
+
+                <!-- start: Icon Box Start -->
+                <div class="span6">
+                    <div class="icons-box-vert">
+                        <i class="ico-ipad ico-color circle-color big"></i>
+                        <div class="icons-box-vert-info">
+                            <h3>24/7 palaikymas</h3>
+                            <p>Mes visada esame pasiruoše suteikti Jums profesionalią pagalbą!</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- end: Icon Box -->
+
+                <!-- start: Icon Box Start -->
+                <div class="span6">
+                    <div class="icons-box-vert">
+                        <i class="ico-thumbs-up  ico-white circle-color-full big-color"></i>
+                        <div class="icons-box-vert-info">
+                            <h3>Socialiniai tinklai</h3>
+                            <p>Mes padėsime Jums pasinaudoti visomis rinkodaros strategijomis ir surinkti kuo daugiau "like" !</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- end: Icon Box -->
+
+            </div>
+            <!-- end: Icon Boxes -->
+            <div class="clear"></div>
+        </div>
+        <!-- end: Row -->
+
+			<hr>
+		
+			<!-- start Clients List -->	
+			<div class="clients-carousel">
+		    <p><h3>Mūsų klientai</h3></p>
+				<ul class="slides clients">
+					<li><img src="{{ asset('img/logos/1.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/2.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/3.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/4.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/5.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/6.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/7.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/8.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/9.png') }}" alt=""/></li>
+					<li><img src="{{ asset('img/logos/10.png') }}" alt=""/></li>
+				</ul>
+		
+			</div>
+			<!-- end Clients List -->
+		
+			<hr>
+			
+	{% endblock %}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.leftmargin10 {
+	margin-left:10px;
+}
+.marginleft128{
+	margin-left:128px;
+}
+.margintop3 {
+	margin-top:3px;
+}
+input.widthLong {
+	width:188px;
+}
+.alignRight {
+	float:right;	
+}
+img.product-listing {
+	margin: 2px;
+	border: 0;
+	widows: 126px;
+	height: 126px;
+}
+img.logo {
+		max-width:70%;
+		
+}

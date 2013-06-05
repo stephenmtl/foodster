@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="{{ asset('shopsource/css/bootstrap.css') }}" rel="stylesheet">
+    <!--<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
+    <link href="{{ asset('shopsource/css/customization.css') }}" rel="stylesheet">
+    <title>{{  shop[0].title }}</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="span2">
+            <img src="{{ asset('shopsource/img/logo.jpg') }}" alt="Logotipas - Kebabų pasaulis" class="logo"/>
+        </div>
+        <div class="span6">
+            <h3>{{ shop[0].motto }}</h3>
+        </div>
+        <div class="span3 offset1">
+            <!-- Login form -->
+            <form class="form-inline pull-right">
+                <input type="text" class="input-small margintop3 widthLong leftmargin10" placeholder="El. paštas">
+                <br />
+                <input type="password" class="input-small margintop3 widthLong leftmargin10" placeholder="Slaptažodis">
+                <br />
+                <button type="submit" class="btn btn-success leftmargin10 margintop3">Prisijungti</button>
+                <button type="button" class="btn btn-info leftmargin10 margintop3">Registruotis</button>
+            </form>
+            <!-- End of Login form --></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span2">
+            <!-- Inflate Categories menu here -->
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a>Kategorijos</a></li>
+                <li><a href="#">Akcijos</a></li>
+                <li><a href="#">Sriubos</a></li>
+                <li><a href="#">Karštieji patiekalai</a></li>
+                <li><a href="#">Gėrimai</a></li>
+            </ul>
+        </div>
+        <div class="span10">
+            <div class="row">
+                <div class="span7">
+                    <!-- Content goes here -->
+                    <div class="alert" id="confirmationMessage" hidden="true"> <strong>Jūsų užsakymas priimtas. </strong> Užsakymas bus pristatytas per 45-60 minučių. </div>
+                    <p class="lead">Kategorijos aprašymas - kebabai, seniausias pasaulyje maistas, gaminamas nuo 1999 metų.</p>
+
+                    <div class="media">
+                        <div class="media-object pull-left" > <img src="{{ asset('shopsource/img/injected.jpg') }}" class="product-listing" /></div>
+                        <div class="media-body marginleft128">
+                            <div class="media-heading"><strong>Kebabas</strong>
+                                <span class="badge badge-warning pull-right">11.99Lt</span>
+                            </div>
+                            Karštas su vaniliniu padažu </div>
+                        <button class="btn btn-warning btn-mini pull-right" >Į krepšelį</button>
+                    </div>
+                </div>
+                <div class="span3">
+                    <pre>{{  shop[0].worktime }}</pre>
+                    <br /><hr /><br />
+                    <pre>Krepšelio turinys</pre>
+                    <br /><hr /><br /><pre>{{ shop[0].PhoneNumber }}</pre>
+                    <br /><hr /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="{{ asset('shopsource/js/jquery-1.10.1.js') }}" type="text/javascript"></script>
+<script src="{{ asset('shopsource/js/customization.js') }}" type="text/javascript"></script>
+<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,147 @@
+{% extends "FoodStoreBundle::layout.html.twig" %}
+{% block title %} Foodster - Apie mus{% endblock %}
+
+{% block pagetitle %}
+
+    <div id="page-title">
+
+        <div id="page-title-inner">
+
+            <div class="container">
+
+                <h2><i class="ico-stats ico-white"></i>Apie mus</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
+	
+{% block content %}
+
+    <!--start: Row -->
+    <div class="row">
+
+    <div class="span8">
+
+        <!-- start: About Us -->
+        <div id="about">
+            <div class="title"><h3>Kas mes esam?</h3></div>
+            <p>
+                Esame jauna, novatoriška ir veržli kompanija, priklausanti „Eika“ įmonių grupei. Įmonė
+                teikia kompleksines pastatų administravimo ir priežiūros paslaugas (daugiau informacijos:
+                www.servico.lt) „SERVICO" priklauso JTVP Atsakingo verslo įmonių tinklui Lietuvoje, o
+                šiemet buvo apdovanota Nacionaliniuose atsakingo verslo apdovanojimuose kaip „2011m.
+                socialiai atsakinga Lietuvos įmonė“. 2012m. įmonė tapo Švedijos prekybos rūmų
+                apdovanojimo „CSR Initiative of the year“ laureatais.
+            </p>
+
+        </div>
+        <!-- end: About Us -->
+
+        <!-- start: Team -->
+        <div id="team">
+
+            <div class="title"><h3>Mūsų komanda</h3></div>
+
+            <!-- start: Row -->
+            <div class="row">
+
+                <!-- start: About Member -->
+                <div class="span4">
+                    <div class="avatar view-team">
+                        <img src="{{  asset('img/team_member.jpg') }}" alt="team member">
+
+                        <div class="mask">
+                            <h2>Apie mane</h2>
+
+                            <p>
+                                Įkūrėjas ir generalinis direktorius
+                            </p>
+                            <a href="#" class="info">Aš LinkedIn'e</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="team-name">Vardenis Pavardenis<span>Įkūrėjas</span></div>
+                    <div class="social_profiles">
+                        <ul class="social-bookmarks">
+                            <li class="facebook"><a href="">facebook</a></li>
+                            <li class="flickr"><a href="">flickr</a></li>
+                            <li class="googleplus"><a href="#">googleplus</a></li>
+                            <li class="linkedin"><a href="#">linkedin</a></li>
+                            <li class="twitter"><a href="#">twitter</a></li>
+                            <li class="pinterest"><a href="#">pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end: About Member -->
+
+            </div>
+            <!-- end: Row -->
+
+        </div>
+        <!-- end: Team -->
+
+
+    </div>
+
+    <div class="span4">
+
+        <!-- start: Sidebar -->
+        <div id="sidebar">
+
+
+            <!-- start: Tabs -->
+            <div class="title"><h3>Mūsų projektai</h3></div>
+
+            <ul class="tabs-nav">
+                <li class="active"><a href="#tab1"><i class="mini-ico-glass"></i>Foodster</a></li>
+                <li><a href="#tab2"><i class="mini-ico-list"></i>Driving Manager</a></li>
+            </ul>
+
+            <div class="tabs-container">
+                <div class="tab-content" id="tab1">1. Projekto aprašymas. Dar neparuoštas
+                </div>
+                <div class="tab-content" id="tab2">2. Projekto aprašymas. Dar neparuoštas
+                </div>
+            </div>
+            <!-- end: Tabs -->
+
+            <!-- start: Testimonials-->
+
+            <div class="testimonial-container">
+
+                <div class="title"><h3>Atsiliepimai</h3></div>
+
+                <div class="testimonials-carousel" data-autorotate="3000">
+
+                    <ul class="carousel">
+
+                        <li class="testimonial">
+                            <div class="testimonials">Dirbti su Foodster yra grynas malonumas. Mano resotranas tapo vienas iš ...
+                            </div>
+                            <div class="testimonials-bg"></div>
+                            <div class="testimonials-author">Povilas, <span>Žemynos Šašlykai</span></div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- end: Testimonials-->
+
+        </div>
+        <!-- end: Sidebar -->
+
+    </div>
+
+    </div>
+    <!--end: Row-->
+
+    </div>
+    <!--end: Container-->
+
+{% endblock %}

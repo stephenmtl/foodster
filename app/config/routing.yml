@@ -1,0 +1,5 @@
+_food_store:
+    resource: "@FoodStoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

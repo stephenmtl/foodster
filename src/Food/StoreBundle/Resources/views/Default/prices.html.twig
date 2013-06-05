@@ -1,0 +1,74 @@
+{% extends "FoodStoreBundle::layout.html.twig" %}
+{% block title %} Maisto užsakymo sistema - Kainos{% endblock %}
+
+{%  block pagetitle %}
+	<!-- start: Page Title -->
+	<div id="page-title">
+
+		<div id="page-title-inner">
+
+			<!-- start: Container -->
+			<div class="container">
+
+				<h2><i class="ico-usd ico-white"></i>Kainos</h2>
+
+			</div>
+			<!-- end: Container  -->
+
+		</div>	
+
+	</div>
+{% endblock %}
+{% block content %}
+
+		<!-- start:Container -->
+		<div class="container">
+
+			<!-- start: Table -->
+			<h4>Mokėjimo planai</h4>
+
+			<div class="two-tables">
+
+				<div class="pricing-table">
+					<div class="color-cccddd">
+						<h3>Plano pavadinimas</h3>
+						<h4><span class="price">Kaina</span> <span class="time">LT/mėn.</span></h4>
+						<ul>
+							<li>Sistema</li>
+							<li>Palaikymas</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="pricing-table">
+					<div class="color-custom">
+						<h3>Išplėstinis</h3>
+						<h4><span class="price">XX</span> <span class="time">LT/mėn.</span></h4>
+						<ul>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+							<li>Custom option</li>
+						</ul>
+						<a href="#" class="buy"><span>Užsakyti</span></a>
+					</div>
+				</div>
+
+			</div>
+			<!-- end: Table -->
+
+		{% endblock %}
